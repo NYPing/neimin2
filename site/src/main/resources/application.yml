@@ -1,0 +1,15 @@
+server:
+  port: 8885
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/frame?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+
+mybatis:
+  typeAliasesPackage: com.zpark.site.model
+  mapperLocations: classpath:mapper/*.xml
